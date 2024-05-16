@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/styles/bootstrap-icons.min.css">
+    
+    <title>Document</title>
+    <style>
+        * {
+            
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+        }
+        .container {
+            padding: 5%;
+            width: 100%;
+        } 
+        .container .items {
+
+            background-color: red;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            
+
+            
+        }
+        .container .items .item {
+            width: 30%;
+            background-color: yellow;
+            padding: 2%;
+            border: 3px solid pink;
+            margin-block: 2%;
+        }
+        .container .items .item:first-child {
+            transition: all 0.8s;
+        }
+        .container .items .item:first-child:hover {
+            transform: scale(1.1);
+        }
+        .container .items .item:nth-child(2) {
+            filter: sepia(100%);
+            transition: all 0.8s linear;
+        }
+        .container .items .item:nth-child(2):hover {
+            filter: sepia(0);
+        }
+        .container .items .item:nth-child(3) {
+            filter: drop-shadow(3px 3px 3px red);
+            transition: all 0.8s ease-in;
+        }
+        .container .items .item:nth-child(3):hover {
+            filter: drop-shadow(10px 10px 0 green);
+        }
+        .container .items .item:nth-child(4) {
+            filter: grayscale(0);
+            transition: all 0.8s ease-out;
+        }
+        .container .items .item:nth-child(4):hover {
+            filter: grayscale(100%);
+        }
+        .container .items .item:nth-child(5){
+            filter: contrast(0%);
+            filter: brightness(90%);
+            filter: hue-rotate(90deg);
+            filter: saturate(40%);
+        }
+        .container .items .item:nth-child(6){
+            filter: brightness(0) invert(1);
+            transition: all 0.8s ease-in;
+        }
+        .container .items .item:nth-child(6):hover {
+            filter: brightness(100%) invert(0);
+        }
+
+        .section {
+            display: flex;
+            justify-content: space-between;
+
+        
+        }
+        .section h3 {font-family:rukia ,Arial, Helvetica, sans-serif;}
+        .section h3>span{
+            color: gold;
+        }
+
+        @font-face{
+            src:url('./Rukia\ Demo.ttf');
+            font-family: rukia;
+        }
+
+        .header-right{
+            border-top: 10px solid grey;
+        }
+        .header-right h3 {
+            margin-top: 0;
+        }
+
+        #logs {
+           
+            
+            padding: 5%;
+            background-image: url(./static/images/construction.jpg);
+            background-color: rgb(5, 5, 34);
+            color: white;
+            background-repeat: none;
+            background-blend-mode:multiply;
+            
+        }
+
+        #logs-head {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+        section#logs  .log-left {
+            line-height: 1em;
+            
+        }
+        section#logs  .log-left h2:first-child{
+            margin-top: 0;
+            color: gold;
+        }
+        .log-right {
+            display: flex;
+            border-top: 3px solid rgb(204, 202, 202);
+            padding-block: 0.8em;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+        .log-right p {
+            color: rgb(204, 202, 202);
+            margin-right: 5%;
+            margin: 0;
+        }
+        .log-right a {
+            border: none;
+            background-color: gold;
+            color: black;
+            display: block;
+            padding: 3%;
+            width: 10em;
+            margin-left: 22px;
+            border-radius: 5px;
+        }
+      .cards {
+        display: flex;
+        flex-flow: nowrap row;
+        justify-content: space-around;
+       
+      }
+
+      .card {
+        background-color: white;
+        color: black;
+        border: 1px solid transparent;
+        border-radius: 2px;
+        padding: 2%;
+        margin: 1%;
+        position: relative;
+        transition: all 10.8s linear;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+      .card:hover {
+        background-image: url(./static/images/logo.svg);
+        
+        transition: all 10.8s linear;
+      }
+      .card p {
+        transition: all 0.8s linear;
+        opacity: 0;
+
+      }
+      .card:hover p {
+        opacity: 1;
+      }
+      .card i {
+        position: absolute;
+        right: 2px;
+        top: 10%;
+        color: white;
+        background-color: red;
+        padding: 2%;
+        font-size: 40px;
+        border-radius: 10px;
+      }
+    </style>
+</head>
+<body>
+
+    <section id="logs">
+        <div id="logs-head">
+            <div class="log-left">
+                <h2>End to End Logistics</h2>
+                <h2>All Industries We Serve</h2>
+            </div>
+            <div class="log-right">
+                <p>We are trusted partner for personalized transport solutions around the world.</p>
+             
+                <a>View All Services</a>
+            
+
+            </div>
+        </div>
+   
+    <div class="cards">
+        <div class="card">
+    
+            <h3>Healthcare Logistics</h3>
+            <i class="bi-hospital"></i>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut esse commodi est sit dolor quam, rerum qui expedita rem ratione.</p>
+        </div>
+        <div class="card">
+            <h3>Construction Logistics</h3>
+            <i class="bi-alarm"></i>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut esse commodi est sit dolor quam, rerum qui expedita rem ratione.</p>
+        </div>
+        <div class="card">
+            <h3>Supply Chain Logistics</h3>
+            <i class="bi-alarm"></i>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut esse commodi est sit dolor quam, rerum qui expedita rem ratione.</p>
+        </div>
+        <div class="card">
+            <h3>Food & Drinks Logistics</h3>
+            <i class="bi-alarm"></i>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut esse commodi est sit dolor quam, rerum qui expedita rem ratione.</p>
+        </div>
+  
+    </div>
+
+</section>
+
+
+    <!-- <div class="container">
+        <div class="section">
+            <div class="header-left">
+                <h3>End to End Logistics</h3>
+                <h3>End to End Logistics</h3>
+            </div>
+            <div class="header-right">
+                <h3>End to End Logistics</h3>
+            </div>
+        </div>
+        <div class="items">
+            <div class="item">
+                <h3>Logo</h3>
+                <img src="../src/logo.svg" alt="react-logo">
+            </div>
+            <div class="item">
+                <h3>Logo</h3>
+                <img src="../src/logo.svg" alt="react-logo">
+            </div>
+            <div class="item">
+                <h3>Logo</h3>
+                <img src="../src/logo.svg" alt="react-logo">
+            </div>
+            <div class="item">
+                <h3>Logo</h3>
+                <img src="../src/logo.svg" alt="react-logo">
+            </div>
+            <div class="item">
+                <h3>Logo</h3>
+                <img src="../src/logo.svg" alt="react-logo">
+            </div>
+            <div class="item">
+                <h3>Logo</h3>
+                <img src="../src/logo.svg" alt="react-logo">
+            </div>
+        </div>
+
+    </div> -->
+</body>
+</html>
