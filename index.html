@@ -188,6 +188,23 @@
         font-size: 40px;
         border-radius: 10px;
       }
+
+      .end {
+        position: relative;
+      }
+      .end h3 {
+        text-align: center;
+        position: absolute;
+        width: 20%;
+        left: -30%;
+        background-color: gold;
+        color: red;
+        transition: all 1s linear;
+      }
+      #logs:hover .end h3{
+        left:50%;
+        
+      }
     </style>
 </head>
 <body>
@@ -231,7 +248,9 @@
         </div>
   
     </div>
-
+    <div class="end">
+       <h3>The End</h3>
+    </div>
 </section>
 
 
